@@ -9,10 +9,5 @@ class ManageusersController < ApplicationController
      redirect_to manageusers_path
     end
   end
-  def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-    redirect_to "welcome#index"
-    
-  end
+ 
 end
