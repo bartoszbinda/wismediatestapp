@@ -5,6 +5,12 @@ $navbar-default-color: $dark;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.articles-box
+{
+    margin:auto;
+    width: 70%;
+    text-align:left;
+}
 #logo {
     margin-top: 10px;
     margin-bottom: 10px;
