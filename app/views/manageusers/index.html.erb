@@ -1,0 +1,23 @@
+<h1 class="center">Manage users.</h1>
+<% if user_signed_in? && current_user.isAdmin %>
+  <table class="table-striped table-hover table">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Action</th>
+    <% @users.each do |u| %>
+      <tr>
+        <td><%= u.id %></td>
+        <td><%= u.email %></td>
+        <td><form action="updateAdminStatus" method="PUT">
+        <% if u.isAdmin %>
+        <input type=submit value="Yes" class="btn btn-success">
+        <% else %>
+        <input type=submit value="No" class="btn btn-warning">
+        <% end %>
+        <input type="hidden" value="<%= u.id %>" name="id"></form>
+  </td>
+      </tr>
+    <% end %>
+<% else %>
+<h1>Access denied!</h1>
+<% end %>
