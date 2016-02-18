@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
   resources :manageusers
+  match 'users/:id' => 'users#destroy', :via => :delete, :as => :admin_destroy_user
   get 'welcome/index'
   get 'manageusers', to: "manageusers#index"
   root 'welcome#index'

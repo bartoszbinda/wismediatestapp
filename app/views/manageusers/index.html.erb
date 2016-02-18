@@ -16,7 +16,7 @@
         <input type=submit value="No" class="btn btn-warning">
         <% end %>
         <input type="hidden" value="<%= u.id %>" name="id"></form></td>
-        <td><%= link_to 'Delete account', registration_path(u), method: :delete, data: {confirm: "are you sure?"}  %> </td>
+        <td><%= link_to 'Delete account', admin_destroy_user_path(u), method: :delete, data: {confirm: "are you sure?"}  %> </td>
         
       </tr>
     <% end %>
