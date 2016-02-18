@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'manageusers/index'
   get '/updateAdminStatus', to: "manageusers#updateAdminStatus"
   devise_for :users
+  resources :users
+  resources :manageusers
   get 'welcome/index'
   get 'manageusers', to: "manageusers#index"
   root 'welcome#index'

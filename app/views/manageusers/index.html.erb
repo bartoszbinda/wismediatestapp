@@ -3,7 +3,8 @@
   <table class="table-striped table-hover table">
     <th>ID</th>
     <th>Name</th>
-    <th>Action</th>
+    <th>Toggle Admin Status</th>
+    <th>Delete account.</th>
     <% @users.each do |u| %>
       <tr>
         <td><%= u.id %></td>
@@ -14,8 +15,9 @@
         <% else %>
         <input type=submit value="No" class="btn btn-warning">
         <% end %>
-        <input type="hidden" value="<%= u.id %>" name="id"></form>
-  </td>
+        <input type="hidden" value="<%= u.id %>" name="id"></form></td>
+        <td><%= link_to 'Delete account', registration_path(u), method: :delete, data: {confirm: "are you sure?"}  %> </td>
+        
       </tr>
     <% end %>
 <% else %>

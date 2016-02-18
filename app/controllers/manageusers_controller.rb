@@ -9,4 +9,11 @@ class ManageusersController < ApplicationController
      redirect_to manageusers_path
     end
   end
+  def destroy
+    @user = User.find(params[:id])
+    if @user.destroy
+      flash[:success] = "User deleted"
+      redirect_to manageusers_path
+    end
+  end
 end
