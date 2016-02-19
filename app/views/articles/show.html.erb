@@ -18,7 +18,7 @@
       <p>
         <% if user_signed_in? %>
           <%= f.label :commenter %><br>
-          <%= f.text_field :commenter, value: current_user.email %>
+          <%= f.text_field :commenter, value: current_user.nick %>
         <% else %>
           <%= f.label :commenter %><br>
           <%= f.text_field :commenter %><br>
