@@ -1,0 +1,2 @@
+module ManagepostsHelper
+end

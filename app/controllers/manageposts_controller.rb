@@ -1,0 +1,2 @@
+class ManagepostsController < ApplicationController
+end
