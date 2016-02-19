@@ -1,15 +1,15 @@
 <div class="container-fluid center">
-  <br>
+  <div class='articles-box'>
   <article class="post-box">
     <h1 class="center"><%=@article.title%></h1>
-    <% unless @article.image.url %>
+    <% unless @article.image_file_name.nil? %>
       <p>
         <%= image_tag @article.image.url %>
       </p>
     <% end %>
-    <% unless @article.video.url %>
+    <% unless @article.video_file_name.nil? %>
       <p class="center">
-        <%= video_tag @article.video, :size => "320x240", :controls => true %>
+        <%= video_tag @article.video.url, :size => "320x240", :controls => true %>
 
       </p>
     <% end %>
@@ -19,8 +19,11 @@
     </p>
     
   </article>
-  <% if user_signed_in? && !current_user.isBanned %>
-    <div class="articles-box">
+  <% if user_signed_in? && current_user.isBanned %>
+    <h1>You are banned!</h1>
+      
+      
+    <% else %>
       <h2 class="left">Comments:</h2>
       <%= render @article.comments %>
       <br>
@@ -44,11 +47,8 @@
           <%= f.submit %>
         </p>
       <% end %>
-      
-    </div>
-    <% else %>
-      <h1>You are banned!</h1>
     <% end %>
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'Back', articles_path %>
+  </div>
 </div>

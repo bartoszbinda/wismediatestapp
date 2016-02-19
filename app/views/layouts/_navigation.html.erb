@@ -2,7 +2,7 @@
   <div class="container">
     <%= link_to "Group blog", "/welcome/index", class: "btn btn-lg btn-success", id: "logo" %>
     <div class="nav_item">
-      <%= link_to "All posts", "/articles", class: "btn btn-default btn-warning" %>
+      <%= link_to "Articles", "/articles", class: "btn btn-default btn-warning" %>
     </div>
     <% if user_signed_in? %>
     <div class="nav_item">
@@ -15,10 +15,10 @@
      
     <% if current_user.isAdmin %>
       <div class="nav_item">
-        <%= link_to "Manager users", "/manageusers", class: "btn btn-default btn-warning" %>
+        <%= link_to "Manager Users", "/manageusers", class: "btn btn-default btn-warning" %>
       </div>
       <div class="nav_item">
-        <%= link_to "Manage Posts", "/manageposts", class: "btn btn-default btn-warning" %>
+        <%= link_to "Manage Articles", "/manageposts", class: "btn btn-default btn-warning" %>
       </div>
     <% end %>
     

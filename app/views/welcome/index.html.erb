@@ -5,7 +5,7 @@
     
     <% @articles.each do |article| %>
     <% break if @counter == 3 %>
-      <h1 class="center"><%= article.title %></h1>
+      <h1 class="center"><%= link_to article.title, article_path(article) %></h1>
       <p><%= article.text %></p>
       <br>
     <% @counter += 1 %>

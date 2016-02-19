@@ -1,10 +1,12 @@
 <h1>Listing articles</h1>
 <div class="container-fluid">
-  <article class="post-box">
+  <div class='articles-box'>
     <% @articles.each do |article| %>
+    <article class="post-box">
       <h1 class="center"><%= link_to article.title, article_path(article) %></h1>
       <p><%= article.text %></p>
       <br>
+    </article>
     <% end %>
-  </article>
+  </div>
 </div>
