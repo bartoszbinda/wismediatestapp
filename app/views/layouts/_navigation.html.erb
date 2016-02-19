@@ -1,6 +1,9 @@
 <header class="navbar navbar-fixed-top navbar-default">
   <div class="container">
     <%= link_to "Group blog", "/welcome/index", class: "btn btn-lg btn-success", id: "logo" %>
+    <div class="nav_item">
+      <%= link_to "All posts", "/articles", class: "btn btn-default btn-warning" %>
+    </div>
     <% if user_signed_in? %>
     <div class="nav_item">
       <%= link_to "Edit Profile", edit_user_registration_path, class: "btn btn-default btn-warning" %>

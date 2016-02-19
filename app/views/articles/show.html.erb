@@ -1,14 +1,13 @@
 <div class="container-fluid center">
-
-  <p>
-    <strong>Title:</strong>
-    <%= @article.title %>
-  </p>
-   
-  <p>
-    <strong>Text:</strong>
-    <%= @article.text %>
-  </p>
+  <br>
+  <article class="post-box">
+    <h1 class="center"><%=@article.title%></h1>
+     
+    <p>
+      
+      <%= @article.text %>
+    </p>
+  </article>
   <div class="articles-box">
     <h2 class="left">Comments:</h2>
     <%= render @article.comments %>

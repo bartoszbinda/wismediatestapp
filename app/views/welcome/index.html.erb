@@ -3,10 +3,13 @@
 <div class="container-fluid">
   <article class="post-box">
     
-    <% @news.each do |article| %>
+    <% @articles.each do |article| %>
+    <% break if @counter == 3 %>
       <h1 class="center"><%= article.title %></h1>
       <p><%= article.text %></p>
       <br>
+    <% @counter += 1 %>
+    
     <% end %>
     
   </article>
