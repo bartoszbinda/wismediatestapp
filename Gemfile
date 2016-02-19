@@ -8,6 +8,9 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+#Use videojs to enable watching video
+gem 'videojs_rails'
+
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
