@@ -1,5 +1,4 @@
 require 'test_helper'
-
 class ArticleTest < ActiveSupport::TestCase
    
   test "should not be blank" do
@@ -11,4 +10,38 @@ class ArticleTest < ActiveSupport::TestCase
     article.title = ""
     assert_not article.valid?
   end
+  test 'title should be at least 5 chars' do
+    article = Article.new
+    article.title = "a"*4
+    assert_not article.valid?
+  end
+  test 'title should be string' do
+    article = Article.new
+    article.title = 0
+    assert_not article.valid?
+  end
+  test 'title should not be over 200 chars' do
+    article = Article.new
+    article.title = 'a'*201
+    assert_not article.valid?
+  end
+  test 'title should be unique' do
+    article1 = Article.new
+    article1.title = "a" * 10
+    article1.save
+    article2 = Article.new
+    article2.title = "a" * 10
+    assert_not article2.valid?
+  end
+  test 'for at least 5 chars title should be allowed' do
+    article = Article.new
+    article.title = "a" * 5
+    assert article.valid?
+  end
+  test 'for at max 200 chars title should be allowed' do
+    article = Article.new
+    article.title = "a" * 200
+    assert article.valid?
+  end  
+
 end
