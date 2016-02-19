@@ -1,15 +1,10 @@
 <h1>Listing articles</h1>
 <div class="container-fluid">
-  <%= link_to 'New article', new_article_path %>
-  <div>
-    
-   
+  <article class="post-box">
     <% @articles.each do |article| %>
-      
-      <%= article.title %>
-      <%= article.text %>
-      
-    
+      <h1 class="center"><%= link_to article.title, article_path(article) %></h1>
+      <p><%= article.text %></p>
+      <br>
     <% end %>
-  </div>
+  </article>
 </div>

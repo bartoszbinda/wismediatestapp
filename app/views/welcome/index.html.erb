@@ -1,1 +1,13 @@
-<h1>Hi Rails!</h1>
+<h1>Hi there!</h1>
+<h1>Here are some newest posts!</h1>
+<div class="container-fluid">
+  <article class="post-box">
+    
+    <% @news.each do |article| %>
+      <h1 class="center"><%= article.title %></h1>
+      <p><%= article.text %></p>
+      <br>
+    <% end %>
+    
+  </article>
+</div>
