@@ -8,31 +8,36 @@
       <%= @article.text %>
     </p>
   </article>
-  <div class="articles-box">
-    <h2 class="left">Comments:</h2>
-    <%= render @article.comments %>
-    <br>
-    <h2 class="left">Add a comment:</h2>
-    <%= form_for([@article, @article.comments.build]) do |f| %>
-      <p>
-        <% if user_signed_in? %>
-          <%= f.label :commenter %><br>
-          <%= f.text_field :commenter, value: current_user.nick %>
-        <% else %>
-          <%= f.label :commenter %><br>
-          <%= f.text_field :commenter %><br>
-        <% end  %>
-      </p>
-        
-      <p>
-        <%= f.label :body %><br>
-        <%= f.text_area :body %>
-      </p>
-      <p>
-        <%= f.submit %>
-      </p>
+  <% if user_signed_in? && !current_user.isBanned %>
+    <div class="articles-box">
+      <h2 class="left">Comments:</h2>
+      <%= render @article.comments %>
+      <br>
+      <h2 class="left">Add a comment:</h2>
+      <%= form_for([@article, @article.comments.build]) do |f| %>
+        <p>
+          <% if user_signed_in? %>
+            <%= f.label :commenter %><br>
+            <%= f.text_field :commenter, value: current_user.nick %>
+          <% else %>
+            <%= f.label :commenter %><br>
+            <%= f.text_field :commenter %><br>
+          <% end  %>
+        </p>
+          
+        <p>
+          <%= f.label :body %><br>
+          <%= f.text_area :body %>
+        </p>
+        <p>
+          <%= f.submit %>
+        </p>
+      <% end %>
+      
+    </div>
+    <% else %>
+      <h1>You are banned!</h1>
     <% end %>
-   </div>
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'Back', articles_path %>
 </div>

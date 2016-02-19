@@ -5,6 +5,7 @@
     <th>Name</th>
     <th>Email</th>
     <th>Toggle Admin Status</th>
+    <th>isBanned?</th>
     <th>Delete account.</th>
     <% @users.each do |u| %>
       <tr>
@@ -13,6 +14,13 @@
         <td><%= u.email %></td>
         <td><form action="updateAdminStatus" method="PUT">
         <% if u.isAdmin %>
+        <input type=submit value="Yes" class="btn btn-success">
+        <% else %>
+        <input type=submit value="No" class="btn btn-warning">
+        <% end %>
+        <input type="hidden" value="<%= u.id %>" name="id"></form></td>
+        <td><form action="setIsBanned" method="PUT">
+        <% if u.isBanned %>
         <input type=submit value="Yes" class="btn btn-success">
         <% else %>
         <input type=submit value="No" class="btn btn-warning">

@@ -10,5 +10,12 @@ class ManageusersController < ApplicationController
      redirect_to manageusers_path
     end
   end
+  def setIsBanned
+    @user = User.find(params[:id])
+    @user.isBanned=!@user.isBanned
+    if @user.save
+     redirect_to manageusers_path
+    end
+  end
  
 end

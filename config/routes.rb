@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'manageusers/index'
   get '/updateAdminStatus', to: "manageusers#updateAdminStatus"
+  get '/setIsBanned', to: "manageusers#setIsBanned"
   devise_for :users
   resources :users
   resources :manageusers
