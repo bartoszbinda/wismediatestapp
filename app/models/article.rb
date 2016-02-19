@@ -5,4 +5,6 @@ class Article < ActiveRecord::Base
 
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
   validates :title, presence:true, length: { minimum:5, maximum: 200}
+  validates_with AttachmentSizeValidator, attributes: :image, less_than: 5.megabytes
+  validates_with AttachmentSizeValidator, attributes: :video, less_than: 10.megabytes
 end

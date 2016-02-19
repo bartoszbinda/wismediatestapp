@@ -7,7 +7,7 @@
         <%= image_tag @article.image.url %>
       </p>
     <% end %>
-    <% unless @article.video.nil? %>
+    <% unless @article.video.url %>
       <p class="center">
         <%= video_tag @article.video, :size => "320x240", :controls => true %>
 
