@@ -1,5 +1,5 @@
-=Group Blog application
-==Made for Wisemedia
+#Group Blog application
+##Made for Wisemedia
 
 I use:
 * Rails 4.2.5
