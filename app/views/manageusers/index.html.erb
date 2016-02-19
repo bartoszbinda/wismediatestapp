@@ -3,11 +3,13 @@
   <table class="table-striped table-hover table">
     <th>ID</th>
     <th>Name</th>
+    <th>Email</th>
     <th>Toggle Admin Status</th>
     <th>Delete account.</th>
     <% @users.each do |u| %>
       <tr>
         <td><%= u.id %></td>
+        <td><%= u.nick %></td>
         <td><%= u.email %></td>
         <td><form action="updateAdminStatus" method="PUT">
         <% if u.isAdmin %>
