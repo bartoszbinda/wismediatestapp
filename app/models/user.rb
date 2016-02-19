@@ -3,6 +3,6 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  validates :nick, presence: true, uniqueness: true
+  validates :nick, presence: true, uniqueness: true, length: { minimum: 3, maximum: 60 }
   validates :email, presence: true
 end
