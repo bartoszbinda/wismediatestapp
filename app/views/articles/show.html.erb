@@ -16,9 +16,15 @@
     <h2 class="left">Add a comment:</h2>
     <%= form_for([@article, @article.comments.build]) do |f| %>
       <p>
-        <%= f.label :commenter %><br>
-        <%= f.text_field :commenter %>
+        <% if user_signed_in? %>
+          <%= f.label :commenter %><br>
+          <%= f.text_field :commenter, value: current_user.email %>
+        <% else %>
+          <%= f.label :commenter %><br>
+          <%= f.text_field :commenter %><br>
+        <% end  %>
       </p>
+        
       <p>
         <%= f.label :body %><br>
         <%= f.text_area :body %>
