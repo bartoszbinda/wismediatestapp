@@ -10,6 +10,9 @@ gem 'rails', '4.2.5'
 gem 'sqlite3'
 #Use videojs to enable watching video
 gem 'videojs_rails'
+#another gem to enable watching video see: https://github.com/tobsch/mediaelement_rails
+gem "mediaelement_rails"
+
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
