@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'manageusers', to: "manageusers#index"
   root 'welcome#index'
+  resources :manageposts
   resources :articles do
     resources :comments
   end
