@@ -1,4 +1,4 @@
-<% if user_signed_in? && current_uset.isAdmin %>
+<% if user_signed_in? && current_user.isAdmin %>
   <div class='contrainer-fluid center'>
     <div class='articles-box'>
     <%= render 'form' %>

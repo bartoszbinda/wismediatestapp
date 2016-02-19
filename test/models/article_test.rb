@@ -25,14 +25,7 @@ class ArticleTest < ActiveSupport::TestCase
     article.title = 'a'*201
     assert_not article.valid?
   end
-  test 'title should be unique' do
-    article1 = Article.new
-    article1.title = "a" * 10
-    article1.save
-    article2 = Article.new
-    article2.title = "a" * 10
-    assert_not article2.valid?
-  end
+  
   test 'for at least 5 chars title should be allowed' do
     article = Article.new
     article.title = "a" * 5

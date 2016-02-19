@@ -2,11 +2,16 @@
   <br>
   <article class="post-box">
     <h1 class="center"><%=@article.title%></h1>
-     
+    <% unless @article.image.url %>
+      <p>
+        <%= image_tag @article.image.url %>
+      </p> 
+    <% end %>
     <p>
       
       <%= @article.text %>
     </p>
+    
   </article>
   <% if user_signed_in? && !current_user.isBanned %>
     <div class="articles-box">
