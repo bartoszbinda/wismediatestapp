@@ -32,7 +32,7 @@
         <p>
           <% if user_signed_in? %>
             <%= f.label :commenter %><br>
-            <%= f.text_field :commenter, value: current_user.nick %>
+            <%= f.text_field :commenter, value: current_user.nick, readonly: !current_user.isAdmin %>
           <% else %>
             <%= f.label :commenter %><br>
             <%= f.text_field :commenter %><br>
