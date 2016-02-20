@@ -9,8 +9,12 @@ I use:
 * devise for authorization, registering new users
 * paperclip for sending images/videos
 
-To do:
+###Done:
+* Write an AJAX for manageposts, done!
+
+#To do:
 * Write an AJAX validation for registration/new.html.erb and registration/edit.html.erb
+* Write an AJAX for articles/show/:id, for a comment section (partially done)
 * Write tests for controllers
 * Write tests for User model, especially the :avatar part
 * Write tests for Article model, especially for those who handles file processing
