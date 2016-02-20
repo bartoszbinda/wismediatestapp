@@ -39,8 +39,13 @@ class ArticlesController < ApplicationController
     @user = current_user
     @article = Article.find(params[:id])
     @article.destroy
+    respond_to do |format|
+      format.html { redirect_to articles_url }
+      format.json { head :no_content }
+      format.js   { render :layout => false }
+   end
    
-    redirect_to articles_path
+    
   end
 
 private

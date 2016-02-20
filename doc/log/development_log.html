@@ -66,8 +66,6 @@
   
     <li><a href="../README_rdoc.html">README</a>
   
-    <li><a href="../RackMultipart20160219-11979-h68cu5.html">RackMultipart20160219-11979-h68cu5</a>
-  
     <li><a href="../Rakefile.html">Rakefile</a>
   
     <li><a href="../app/assets/javascripts/application_js.html">application.js</a>
@@ -27111,6 +27109,306 @@ Rendered articles/show.html.erb within layouts/application (16.4ms)
 Rendered layouts/_navigation.html.erb (2.8ms)</pre>
 
 <p>Completed 200 OK in 180ms (Views: 172.4ms | ActiveRecord: 1.1ms)</p>
+
+<p>Started GET “/manageposts” for 77.65.14.178 at 2016-02-19 20:59:01 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManagepostsController.html#method-i-index">ManagepostsController#index</a>
+as HTML</p>
+
+<pre>[1m[35mUser Load (0.5ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+[1m[36mArticle Load (0.8ms)[0m  [1mSELECT &quot;articles&quot;.* FROM &quot;articles&quot;[0m
+Rendered manageposts/index.html.erb within layouts/application (7.6ms)
+Rendered layouts/_navigation.html.erb (4.0ms)</pre>
+
+<p>Completed 200 OK in 200ms (Views: 193.2ms | ActiveRecord: 1.3ms)</p>
+
+<p>Started GET “/articles/new” for 77.65.14.178 at 2016-02-19 20:59:03 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ArticlesController.html#method-i-new">ArticlesController#new</a>
+as HTML</p>
+
+<pre>[1m[35mUser Load (0.4ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+Rendered articles/_form.html.erb (8.1ms)
+Rendered articles/new.html.erb within layouts/application (14.7ms)
+Rendered layouts/_navigation.html.erb (1.2ms)</pre>
+
+<p>Completed 200 OK in 177ms (Views: 173.3ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/welcome/index” for 77.65.14.178 at 2016-02-19 21:02:47 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.5ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mArticle Load (0.9ms)[0m  SELECT &quot;articles&quot;.* FROM &quot;articles&quot;  ORDER BY &quot;articles&quot;.&quot;created_at&quot; DESC
+Rendered welcome/index.html.erb within layouts/application (8.3ms)
+Rendered layouts/_navigation.html.erb (7.7ms)</pre>
+
+<p>Completed 200 OK in 192ms (Views: 183.7ms | ActiveRecord: 1.3ms)</p>
+
+<p>Started GET “/articles/14” for 77.65.14.178 at 2016-02-19 21:02:51 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ArticlesController.html#method-i-show">ArticlesController#show</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;14&quot;}
+[1m[36mArticle Load (0.5ms)[0m  [1mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; WHERE &quot;articles&quot;.&quot;id&quot; = ? LIMIT 1[0m  [[&quot;id&quot;, 14]]
+[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+[1m[36mComment Load (0.4ms)[0m  [1mSELECT &quot;comments&quot;.* FROM &quot;comments&quot; WHERE &quot;comments&quot;.&quot;article_id&quot; = ?[0m  [[&quot;article_id&quot;, 14]]
+Rendered collection (0.0ms)
+Rendered articles/show.html.erb within layouts/application (17.4ms)
+Rendered layouts/_navigation.html.erb (2.4ms)</pre>
+
+<p>Completed 200 OK in 191ms (Views: 185.2ms | ActiveRecord: 1.2ms)</p>
+
+<p>Started GET “/welcome/index” for 77.65.14.178 at 2016-02-19 21:02:54 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>[1m[35mUser Load (0.3ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+[1m[36mArticle Load (0.6ms)[0m  [1mSELECT &quot;articles&quot;.* FROM &quot;articles&quot;  ORDER BY &quot;articles&quot;.&quot;created_at&quot; DESC[0m
+Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Rendered layouts/_navigation.html.erb (1.7ms)</pre>
+
+<p>Completed 200 OK in 147ms (Views: 142.9ms | ActiveRecord: 0.8ms)</p>
+
+<p>Started GET “/articles/11” for 77.65.14.178 at 2016-02-19 21:02:56 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ArticlesController.html#method-i-show">ArticlesController#show</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;11&quot;}
+[1m[35mArticle Load (0.3ms)[0m  SELECT  &quot;articles&quot;.* FROM &quot;articles&quot; WHERE &quot;articles&quot;.&quot;id&quot; = ? LIMIT 1  [[&quot;id&quot;, 11]]
+[1m[36mUser Load (0.3ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mComment Load (1.3ms)[0m  SELECT &quot;comments&quot;.* FROM &quot;comments&quot; WHERE &quot;comments&quot;.&quot;article_id&quot; = ?  [[&quot;article_id&quot;, 11]]
+Rendered collection (0.1ms)
+Rendered articles/show.html.erb within layouts/application (11.3ms)
+Rendered layouts/_navigation.html.erb (1.9ms)</pre>
+
+<p>Completed 200 OK in 153ms (Views: 145.9ms | ActiveRecord: 1.9ms)</p>
+
+<p>Started GET “/manageusers” for 77.65.14.178 at 2016-02-19 21:03:03 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-index">ManageusersController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.4ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.6ms)[0m  SELECT &quot;users&quot;.* FROM &quot;users&quot;
+Rendered manageusers/index.html.erb within layouts/application (5.4ms)
+Rendered layouts/_navigation.html.erb (2.4ms)</pre>
+
+<p>Completed 200 OK in 223ms (Views: 217.3ms | ActiveRecord: 0.9ms)</p>
+
+<p>Started GET “/setIsBanned?id=2” for 77.65.14.178 at 2016-02-19 21:03:05
++0000 Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1,
+::1, 127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-setIsBanned">ManageusersController#setIsBanned</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;2&quot;}
+[1m[36mUser Load (0.3ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.7ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT 1  [[&quot;id&quot;, 2]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (1.6ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE (&quot;users&quot;.&quot;nick&quot; = &#39;kotek&#39; AND &quot;users&quot;.&quot;id&quot; != 2) LIMIT 1
+[1m[36mSQL (0.6ms)[0m  [1mUPDATE &quot;users&quot; SET &quot;isBanned&quot; = ?, &quot;updated_at&quot; = ? WHERE &quot;users&quot;.&quot;id&quot; = ?[0m  [[&quot;isBanned&quot;, &quot;t&quot;], [&quot;updated_at&quot;, &quot;2016-02-19 21:03:05.598083&quot;], [&quot;id&quot;, 2]]
+[1m[35m (26.5ms)[0m  commit transaction</pre>
+
+<p>Redirected to <a
+href="https://wismediatest-bartoszbinda.c9users.io/manageusers">wismediatest-bartoszbinda.c9users.io/manageusers</a>
+Completed 302 Found in 86ms (ActiveRecord: 29.8ms)</p>
+
+<p>Started GET “/manageusers” for 77.65.14.178 at 2016-02-19 21:03:05 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-index">ManageusersController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.5ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.4ms)[0m  SELECT &quot;users&quot;.* FROM &quot;users&quot;
+Rendered manageusers/index.html.erb within layouts/application (3.6ms)
+Rendered layouts/_navigation.html.erb (1.7ms)</pre>
+
+<p>Completed 200 OK in 173ms (Views: 168.2ms | ActiveRecord: 0.8ms)</p>
+
+<p>Started GET “/setIsBanned?id=2” for 77.65.14.178 at 2016-02-19 21:03:09
++0000 Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1,
+::1, 127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-setIsBanned">ManageusersController#setIsBanned</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;2&quot;}
+[1m[36mUser Load (0.3ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.2ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT 1  [[&quot;id&quot;, 2]]
+[1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE (&quot;users&quot;.&quot;nick&quot; = &#39;kotek&#39; AND &quot;users&quot;.&quot;id&quot; != 2) LIMIT 1
+[1m[36mSQL (0.4ms)[0m  [1mUPDATE &quot;users&quot; SET &quot;isBanned&quot; = ?, &quot;updated_at&quot; = ? WHERE &quot;users&quot;.&quot;id&quot; = ?[0m  [[&quot;isBanned&quot;, &quot;f&quot;], [&quot;updated_at&quot;, &quot;2016-02-19 21:03:09.970785&quot;], [&quot;id&quot;, 2]]
+[1m[35m (22.8ms)[0m  commit transaction</pre>
+
+<p>Redirected to <a
+href="https://wismediatest-bartoszbinda.c9users.io/manageusers">wismediatest-bartoszbinda.c9users.io/manageusers</a>
+Completed 302 Found in 36ms (ActiveRecord: 24.4ms)</p>
+
+<p>Started GET “/manageusers” for 77.65.14.178 at 2016-02-19 21:03:10 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-index">ManageusersController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.4ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.6ms)[0m  SELECT &quot;users&quot;.* FROM &quot;users&quot;
+Rendered manageusers/index.html.erb within layouts/application (3.0ms)
+Rendered layouts/_navigation.html.erb (3.3ms)</pre>
+
+<p>Completed 200 OK in 170ms (Views: 165.3ms | ActiveRecord: 1.0ms)</p>
+
+<p>Started GET “/setIsBanned?id=1” for 77.65.14.178 at 2016-02-19 21:03:55
++0000 Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1,
+::1, 127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-setIsBanned">ManageusersController#setIsBanned</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;1&quot;}
+[1m[36mUser Load (0.4ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.2ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT 1  [[&quot;id&quot;, 1]]
+[1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE (&quot;users&quot;.&quot;nick&quot; = &#39;bati&#39; AND &quot;users&quot;.&quot;id&quot; != 1) LIMIT 1
+[1m[36mSQL (0.3ms)[0m  [1mUPDATE &quot;users&quot; SET &quot;isBanned&quot; = ?, &quot;updated_at&quot; = ? WHERE &quot;users&quot;.&quot;id&quot; = ?[0m  [[&quot;isBanned&quot;, &quot;t&quot;], [&quot;updated_at&quot;, &quot;2016-02-19 21:03:55.725510&quot;], [&quot;id&quot;, 1]]
+[1m[35m (17.9ms)[0m  commit transaction</pre>
+
+<p>Redirected to <a
+href="https://wismediatest-bartoszbinda.c9users.io/manageusers">wismediatest-bartoszbinda.c9users.io/manageusers</a>
+Completed 302 Found in 28ms (ActiveRecord: 19.2ms)</p>
+
+<p>Started GET “/manageusers” for 77.65.14.178 at 2016-02-19 21:03:55 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-index">ManageusersController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.2ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.3ms)[0m  SELECT &quot;users&quot;.* FROM &quot;users&quot;
+Rendered manageusers/index.html.erb within layouts/application (1.4ms)
+Rendered layouts/_navigation.html.erb (6.4ms)</pre>
+
+<p>Completed 200 OK in 126ms (Views: 123.4ms | ActiveRecord: 0.5ms)</p>
+
+<p>Started GET “/articles” for 77.65.14.178 at 2016-02-19 21:03:57 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ArticlesController.html#method-i-index">ArticlesController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.3ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mArticle Load (0.4ms)[0m  SELECT &quot;articles&quot;.* FROM &quot;articles&quot;
+Rendered articles/index.html.erb within layouts/application (2.9ms)
+Rendered layouts/_navigation.html.erb (3.8ms)</pre>
+
+<p>Completed 200 OK in 130ms (Views: 126.3ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/articles/1” for 77.65.14.178 at 2016-02-19 21:04:01 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ArticlesController.html#method-i-show">ArticlesController#show</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;1&quot;}
+[1m[36mArticle Load (0.2ms)[0m  [1mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; WHERE &quot;articles&quot;.&quot;id&quot; = ? LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.2ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1  [[&quot;id&quot;, 1]]
+Rendered articles/show.html.erb within layouts/application (0.4ms)
+Rendered layouts/_navigation.html.erb (1.6ms)</pre>
+
+<p>Completed 200 OK in 102ms (Views: 99.9ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/manageusers” for 77.65.14.178 at 2016-02-19 21:04:04 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-index">ManageusersController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.2ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.3ms)[0m  SELECT &quot;users&quot;.* FROM &quot;users&quot;
+Rendered manageusers/index.html.erb within layouts/application (1.4ms)
+Rendered layouts/_navigation.html.erb (1.2ms)</pre>
+
+<p>Completed 200 OK in 102ms (Views: 96.4ms | ActiveRecord: 0.5ms)</p>
+
+<p>Started GET “/setIsBanned?id=1” for 77.65.14.178 at 2016-02-19 21:04:06
++0000 Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1,
+::1, 127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-setIsBanned">ManageusersController#setIsBanned</a>
+as HTML</p>
+
+<pre>Parameters: {&quot;id&quot;=&gt;&quot;1&quot;}
+[1m[36mUser Load (0.2ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.1ms)[0m  SELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ? LIMIT 1  [[&quot;id&quot;, 1]]
+[1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+[1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM &quot;users&quot; WHERE (&quot;users&quot;.&quot;nick&quot; = &#39;bati&#39; AND &quot;users&quot;.&quot;id&quot; != 1) LIMIT 1
+[1m[36mSQL (0.3ms)[0m  [1mUPDATE &quot;users&quot; SET &quot;isBanned&quot; = ?, &quot;updated_at&quot; = ? WHERE &quot;users&quot;.&quot;id&quot; = ?[0m  [[&quot;isBanned&quot;, &quot;f&quot;], [&quot;updated_at&quot;, &quot;2016-02-19 21:04:06.233389&quot;], [&quot;id&quot;, 1]]
+[1m[35m (11.0ms)[0m  commit transaction</pre>
+
+<p>Redirected to <a
+href="https://wismediatest-bartoszbinda.c9users.io/manageusers">wismediatest-bartoszbinda.c9users.io/manageusers</a>
+Completed 302 Found in 19ms (ActiveRecord: 12.1ms)</p>
+
+<p>Started GET “/manageusers” for 77.65.14.178 at 2016-02-19 21:04:06 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManageusersController.html#method-i-index">ManageusersController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.3ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mUser Load (0.4ms)[0m  SELECT &quot;users&quot;.* FROM &quot;users&quot;
+Rendered manageusers/index.html.erb within layouts/application (1.8ms)
+Rendered layouts/_navigation.html.erb (2.2ms)</pre>
+
+<p>Completed 200 OK in 119ms (Views: 116.2ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/manageposts” for 77.65.14.178 at 2016-02-19 21:04:37 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManagepostsController.html#method-i-index">ManagepostsController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.3ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mArticle Load (0.6ms)[0m  SELECT &quot;articles&quot;.* FROM &quot;articles&quot;
+Rendered manageposts/index.html.erb within layouts/application (7.5ms)
+Rendered layouts/_navigation.html.erb (1.8ms)</pre>
+
+<p>Completed 200 OK in 124ms (Views: 119.5ms | ActiveRecord: 0.8ms)</p>
+
+<p>Started GET “/manageposts” for 77.65.14.178 at 2016-02-19 21:04:38 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ManagepostsController.html#method-i-index">ManagepostsController#index</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.2ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+[1m[35mArticle Load (0.3ms)[0m  SELECT &quot;articles&quot;.* FROM &quot;articles&quot;
+Rendered manageposts/index.html.erb within layouts/application (5.1ms)
+Rendered layouts/_navigation.html.erb (1.5ms)</pre>
+
+<p>Completed 200 OK in 107ms (Views: 103.2ms | ActiveRecord: 0.6ms)</p>
+
+<p>Started GET “/articles/new” for 77.65.14.178 at 2016-02-19 21:04:42 +0000
+Cannot render console from 77.65.14.178! Allowed networks: 127.0.0.1, ::1,
+127.0.0.0/127.255.255.255 Processing by <a
+href="../ArticlesController.html#method-i-new">ArticlesController#new</a>
+as HTML</p>
+
+<pre>[1m[36mUser Load (0.5ms)[0m  [1mSELECT  &quot;users&quot;.* FROM &quot;users&quot; WHERE &quot;users&quot;.&quot;id&quot; = ?  ORDER BY &quot;users&quot;.&quot;id&quot; ASC LIMIT 1[0m  [[&quot;id&quot;, 1]]
+Rendered articles/_form.html.erb (3.8ms)
+Rendered articles/new.html.erb within layouts/application (6.6ms)
+Rendered layouts/_navigation.html.erb (2.1ms)</pre>
+
+<p>Completed 200 OK in 146ms (Views: 142.5ms | ActiveRecord: 0.5ms)</p>
 </main>
 
 

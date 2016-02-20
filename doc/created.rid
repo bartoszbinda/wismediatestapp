@@ -1,4 +1,4 @@
-Fri, 19 Feb 2016 20:53:23 +0000
+Fri, 19 Feb 2016 21:05:28 +0000
 ./app/models/article.rb	Fri, 19 Feb 2016 19:38:24 +0000
 ./app/models/comment.rb	Fri, 19 Feb 2016 01:41:42 +0000
 ./app/models/user.rb	Fri, 19 Feb 2016 15:09:32 +0000
@@ -31,7 +31,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./app/assets/javascripts/manageusers.coffee	Thu, 18 Feb 2016 21:07:40 +0000
 ./app/assets/javascripts/application.js	Fri, 19 Feb 2016 17:54:12 +0000
 ./app/views/manageusers/index.html.erb	Fri, 19 Feb 2016 19:02:17 +0000
-./app/views/layouts/_navigation.html.erb	Fri, 19 Feb 2016 19:04:18 +0000
+./app/views/layouts/_navigation.html.erb	Fri, 19 Feb 2016 21:03:46 +0000
 ./app/views/layouts/application.html.erb	Thu, 18 Feb 2016 13:00:08 +0000
 ./app/views/comments/_comment.html.erb	Fri, 19 Feb 2016 00:59:36 +0000
 ./app/views/devise/confirmations/new.html.erb	Thu, 18 Feb 2016 19:48:22 +0000
@@ -54,8 +54,6 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./app/views/articles/show.html.erb	Fri, 19 Feb 2016 19:30:29 +0000
 ./app/views/articles/index.html.erb	Fri, 19 Feb 2016 19:05:57 +0000
 ./Gemfile.lock	Fri, 19 Feb 2016 20:53:14 +0000
-./RackMultipart20160219-11979-1xohzu7.mp4	Fri, 19 Feb 2016 20:51:27 +0000
-./779ad0e3fc9f4b8b6f2eb18680c3216820160219-11979-19djpjw.mp4	Fri, 19 Feb 2016 20:51:27 +0000
 ./public/assets/application-0b858ad8e83e6140b5ba87e6ece442b9109d392e36f37c4fe24db109bcd3149f.js.gz	Fri, 19 Feb 2016 02:34:48 +0000
 ./public/assets/application-0281f92811837365d2b2980bda7be2822f795021986169164867647f44e5f445.css.gz	Fri, 19 Feb 2016 02:34:54 +0000
 ./public/assets/application-0b858ad8e83e6140b5ba87e6ece442b9109d392e36f37c4fe24db109bcd3149f.js	Fri, 19 Feb 2016 02:34:48 +0000
@@ -86,7 +84,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./db/migrate/20160219125427_add_is_banned_to_users.rb	Fri, 19 Feb 2016 12:54:51 +0000
 ./db/migrate/20160219144642_add_attachment_image_to_articles.rb	Fri, 19 Feb 2016 14:46:42 +0000
 ./db/migrate/20160218173343_create_comments.rb	Thu, 18 Feb 2016 17:33:43 +0000
-./db/development.sqlite3	Fri, 19 Feb 2016 20:51:27 +0000
+./db/development.sqlite3	Fri, 19 Feb 2016 21:04:06 +0000
 ./db/schema.rb	Fri, 19 Feb 2016 17:40:46 +0000
 ./db/seeds.rb	Mon, 25 Jan 2016 08:08:46 +0000
 ./config/initializers/assets.rb	Fri, 19 Feb 2016 17:38:46 +0000
@@ -109,13 +107,12 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./config/secrets.yml	Mon, 25 Jan 2016 08:08:46 +0000
 ./config/boot.rb	Mon, 25 Jan 2016 08:08:46 +0000
 ./config/database.yml	Mon, 25 Jan 2016 08:08:46 +0000
-./779ad0e3fc9f4b8b6f2eb18680c3216820160219-11979-1ctyc4t.mp4	Fri, 19 Feb 2016 20:51:27 +0000
-./README.md	Thu, 18 Feb 2016 12:24:32 +0000
+./README.md	Fri, 19 Feb 2016 20:59:33 +0000
 ./tmp/pids/server.pid	Fri, 19 Feb 2016 20:46:41 +0000
 ./tmp/cache/sprockets/v3.0/HqmxJfSKhc3si0_F_NecSaqpf2qoBhi1gEQEoyqvrTQ.cache	Fri, 19 Feb 2016 19:09:35 +0000
 ./tmp/cache/sprockets/v3.0/lB1EHJRnCzGa2Nked2ILxKBV6xKBQHr1Vgg0TaY46cs.cache	Fri, 19 Feb 2016 20:46:46 +0000
 ./tmp/cache/sprockets/v3.0/joQHIl7l70mWVc_diPwa9o5RUAR5rDCG2OYSiYG-re0.cache	Fri, 19 Feb 2016 20:46:48 +0000
-./tmp/cache/sprockets/v3.0/1wyp0tEvnDAv67JlPzbgCZss2euSOdQ9KcEKyBnhm2U.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/1wyp0tEvnDAv67JlPzbgCZss2euSOdQ9KcEKyBnhm2U.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/O-hxCbhezwRCwM5E7BBw1UBLDfYs_6a-Kf_C2zVZAtI.cache	Thu, 18 Feb 2016 13:30:55 +0000
 ./tmp/cache/sprockets/v3.0/rp3c8ZiSZh4Anzpkvhn6EqA6FXB3QUwJAkMk5iXiMDc.cache	Fri, 19 Feb 2016 20:46:49 +0000
 ./tmp/cache/sprockets/v3.0/Cw916Hmnx4OHYsqzd-gXzFEvXtI8_hbOnu-5f27Vrcc.cache	Fri, 19 Feb 2016 20:46:46 +0000
@@ -124,9 +121,9 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/mdfa9-q6z7iSnfQ3R-8Xde0uFOH9_G5kTMgIG_e40gw.cache	Thu, 18 Feb 2016 13:19:43 +0000
 ./tmp/cache/sprockets/v3.0/FwT9qRr2rVweBnXo4SY2dZ4Yoql76MBo_IFD1b3Bk1w.cache	Fri, 19 Feb 2016 20:46:42 +0000
 ./tmp/cache/sprockets/v3.0/Uma9_2PSvwq1dHSUgtvnW20EBFpNW2m7RWGyLlYZ72Q.cache	Fri, 19 Feb 2016 19:26:16 +0000
-./tmp/cache/sprockets/v3.0/zwPXembwX7qaSMJfd0Ysei2Df-VvZ1nqgaq3NAW-xNY.cache	Fri, 19 Feb 2016 20:51:27 +0000
+./tmp/cache/sprockets/v3.0/zwPXembwX7qaSMJfd0Ysei2Df-VvZ1nqgaq3NAW-xNY.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/6gOBmlCOh2NlvoGOPKUDaOmA0BTwurN_ebQcGkFVBKg.cache	Fri, 19 Feb 2016 02:47:09 +0000
-./tmp/cache/sprockets/v3.0/LLMm3sIT5xS7y851zR_XjjEikDOffY3gsJk79nXOCMw.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/LLMm3sIT5xS7y851zR_XjjEikDOffY3gsJk79nXOCMw.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/PVuSBslCN9Sa45riD68BKGRw0Vpae16RYwAWI2BN49o.cache	Fri, 19 Feb 2016 20:46:48 +0000
 ./tmp/cache/sprockets/v3.0/bmofIGKHnnYUzfM75vce7bmu-fwKZTzjoO3SCVUi6QE.cache	Thu, 18 Feb 2016 13:02:06 +0000
 ./tmp/cache/sprockets/v3.0/HWAV5tJQLEVk3_YFltuzBR4-wq_cwDSEfAuNJy1KSog.cache	Thu, 18 Feb 2016 13:01:56 +0000
@@ -134,11 +131,11 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/KZRv6p4D1BljJBXzKYkt5yOI43CBKZ_WyYWTJuIiqv0.cache	Fri, 19 Feb 2016 17:47:30 +0000
 ./tmp/cache/sprockets/v3.0/kyMKB6WJhWCtUuXI9Iv-J0264s27vLQ9ovBv3i6nGJE.cache	Fri, 19 Feb 2016 01:39:12 +0000
 ./tmp/cache/sprockets/v3.0/4I7g7AmNPHbhdry0YUhD93qMFUW9RPnYC6k3DT0lPAo.cache	Fri, 19 Feb 2016 19:14:06 +0000
-./tmp/cache/sprockets/v3.0/xATfrfP1wp_lbEY7J6fGEIq3ChznskcX_TxXPm4FUvg.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/xATfrfP1wp_lbEY7J6fGEIq3ChznskcX_TxXPm4FUvg.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/CrlEStr1QkhBjEt3Mk-OGS2Jg7ADGm2uiovsnxYKVyA.cache	Fri, 19 Feb 2016 20:46:47 +0000
 ./tmp/cache/sprockets/v3.0/SoFDsn4drkT5T0xJV0g8WSZzF2S7Zva9-dbLcdDVPFM.cache	Fri, 19 Feb 2016 19:09:35 +0000
 ./tmp/cache/sprockets/v3.0/L8HQqiAxbZ4WOFkMUc1LcKdAaKGbUYF9OZ8hiZGlQks.cache	Fri, 19 Feb 2016 18:04:40 +0000
-./tmp/cache/sprockets/v3.0/iKfTbzoNriiTU23LS2AdryD_ewN9E6fVglQRo1VVVck.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/iKfTbzoNriiTU23LS2AdryD_ewN9E6fVglQRo1VVVck.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/NFY9oDgD30-6SD8IJSCZ_-4g4DCSVobd2kB7c4pzK6E.cache	Thu, 18 Feb 2016 13:02:06 +0000
 ./tmp/cache/sprockets/v3.0/wJYxHx-R4IuxP8KWD4Zh1Svt2xwYCCMdfSrGg4vZvzU.cache	Fri, 19 Feb 2016 14:30:31 +0000
 ./tmp/cache/sprockets/v3.0/ZQNgyA4lhJVpGZuUcqR_UZLb8-IikHMC6Wik1WJ7Nc4.cache	Fri, 19 Feb 2016 20:46:47 +0000
@@ -163,7 +160,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/w7sS5wKF7jZA3MplnRxmWKkYvW5Sh1FVEAD81MRCjdc.cache	Thu, 18 Feb 2016 13:27:03 +0000
 ./tmp/cache/sprockets/v3.0/yu7Nz9R3DhkhiWCQd5BkCrxVgHJ3nF4N_6Lu7QHnns4.cache	Fri, 19 Feb 2016 18:04:40 +0000
 ./tmp/cache/sprockets/v3.0/hIOPxJX5kC2pddBgcmLrNd-CDwxIUNarNrZgqDAgGDg.cache	Fri, 19 Feb 2016 18:04:40 +0000
-./tmp/cache/sprockets/v3.0/2sfLEg_zJ-gZYZRC5vrPYyIYV7sYj1S24b-vjLuPW8g.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/2sfLEg_zJ-gZYZRC5vrPYyIYV7sYj1S24b-vjLuPW8g.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/z-yDPnfK2ssIhAOwb_Q39NPpLuym301ESjRJ1X5KGz4.cache	Fri, 19 Feb 2016 18:04:40 +0000
 ./tmp/cache/sprockets/v3.0/TxSotvQK0nU8eez01Br3VNmbrVyazyBuUVkMLYYBZiE.cache	Fri, 19 Feb 2016 18:04:40 +0000
 ./tmp/cache/sprockets/v3.0/fwAxtSzT95JD7JvFLNLb-immAJ78CSNUQ8bDM9j99o4.cache	Thu, 18 Feb 2016 13:22:50 +0000
@@ -294,7 +291,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/ddWOsHZD-JmSp5EnNmS2kA3hCrfgDCpmO7Vnq1Yud6Y.cache	Fri, 19 Feb 2016 20:46:49 +0000
 ./tmp/cache/sprockets/v3.0/wnSHeg6YeZuEZKKyVVXEVkBnWQKvICwSRfihEyOWEG4.cache	Fri, 19 Feb 2016 20:46:49 +0000
 ./tmp/cache/sprockets/v3.0/_xZBDFQnTA00ra11SkFgkQFCRuEvAxqSpkynUCsEru4.cache	Fri, 19 Feb 2016 02:40:10 +0000
-./tmp/cache/sprockets/v3.0/I_0PYTv5fgHSB1YAi8VS5BLMqNQfv2AlSqCkQAb0Fdw.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/I_0PYTv5fgHSB1YAi8VS5BLMqNQfv2AlSqCkQAb0Fdw.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/PTlKEQyhu7946tFZYLMxb-q2LkZY0PZ_tXABL6F85mk.cache	Fri, 19 Feb 2016 20:46:46 +0000
 ./tmp/cache/sprockets/v3.0/tQRj8EMmO7POYR-asKeVYRyo1K0kLwfnYXwVNBVmuMg.cache	Fri, 19 Feb 2016 17:50:32 +0000
 ./tmp/cache/sprockets/v3.0/B40AOd4tFe8j4BOfhvvOt-nuLE3Zcyk_0EPUxKv9Sos.cache	Fri, 19 Feb 2016 20:46:49 +0000
@@ -322,7 +319,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/PK3IfoaQgFk4EB5GC-_TmyEjqtVBxoNC8moYrGz5_w0.cache	Fri, 19 Feb 2016 20:46:44 +0000
 ./tmp/cache/sprockets/v3.0/NP-xGDNDwgaQs-zo6I_Ta0GdVh9FXXQLYyR2f6MQcYg.cache	Fri, 19 Feb 2016 14:30:31 +0000
 ./tmp/cache/sprockets/v3.0/7YWF0cgCUiD1oGiyvi4Gx-LPoZLkesb99euyxC8qw2s.cache	Fri, 19 Feb 2016 02:50:48 +0000
-./tmp/cache/sprockets/v3.0/Jp9S_GKSGVqrjboFkO5QwjIe-k4It4XFbxvCBDqogow.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/Jp9S_GKSGVqrjboFkO5QwjIe-k4It4XFbxvCBDqogow.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/p28uvjjwyeOGXTzudzMGOWETspgzHMZwuTmRFGIZ6M0.cache	Thu, 18 Feb 2016 21:15:36 +0000
 ./tmp/cache/sprockets/v3.0/HJNzN3qf13MU6_llwPj29W7rUSUE0wz-ssu7BbuJXQY.cache	Fri, 19 Feb 2016 15:34:09 +0000
 ./tmp/cache/sprockets/v3.0/dnkql8-qP5ygF0vi75FQQSjVVtVqW-FdXz8hNK210qE.cache	Fri, 19 Feb 2016 02:47:09 +0000
@@ -361,7 +358,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/aYABCEYyxsYeQukNLMl27Z-UPmr96c_ksZ35_a7j9_k.cache	Thu, 18 Feb 2016 13:30:41 +0000
 ./tmp/cache/sprockets/v3.0/Vh8YlpEqIGO01B__Y5WBBA5nTrWXmKafhNzzufGH86E.cache	Fri, 19 Feb 2016 19:23:59 +0000
 ./tmp/cache/sprockets/v3.0/683_VSQ3nVm5VWyMBTkeCIdqMF4jw8BiHJx6qILQpCw.cache	Fri, 19 Feb 2016 20:46:42 +0000
-./tmp/cache/sprockets/v3.0/ehCWoSYEKQZy8Cq4ID6_YDMy-966iPaS-sFsTPqpYzw.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/ehCWoSYEKQZy8Cq4ID6_YDMy-966iPaS-sFsTPqpYzw.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/R5Q0MVpwdqD9iK-fV2M6ZgkObS7PxYPVwXKQhCmFjag.cache	Thu, 18 Feb 2016 13:24:52 +0000
 ./tmp/cache/sprockets/v3.0/-RROAvUFT9wfuS6-isIVRA6MAef-R2O0_OJ6m1MwKoU.cache	Fri, 19 Feb 2016 20:46:49 +0000
 ./tmp/cache/sprockets/v3.0/pZ7c6Aii7vr3OKwwYa4s9lhemgBRmLqy1HQtKSUH9ok.cache	Thu, 18 Feb 2016 13:08:07 +0000
@@ -393,7 +390,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/cLIY0wUmcYr2Wt-cCd76BBpYjlA1k01Rjn6yMmOqvwk.cache	Fri, 19 Feb 2016 18:04:40 +0000
 ./tmp/cache/sprockets/v3.0/mjjYnJ5Uw-H4eZcWznGPp8BNaGmhi2XelhvV_RglnPI.cache	Fri, 19 Feb 2016 19:08:21 +0000
 ./tmp/cache/sprockets/v3.0/mBwhNz1hfZPcGWxDYmX7tsXOJvLvWdEZE06mTt0-Id0.cache	Fri, 19 Feb 2016 20:46:47 +0000
-./tmp/cache/sprockets/v3.0/uf7gJwyN9KPU4Kju7ytNjwQfWDjR3vV2wp2MY2fi3-4.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/uf7gJwyN9KPU4Kju7ytNjwQfWDjR3vV2wp2MY2fi3-4.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/yGt9sbOtCRi6YORyhZdG2i1BD7cSWxg2SWk4emxlbpM.cache	Thu, 18 Feb 2016 13:31:54 +0000
 ./tmp/cache/sprockets/v3.0/mPM9j7q-QqRTh2Nz3o4JrsA6uhscI74o-Qm6lVRYRhs.cache	Fri, 19 Feb 2016 19:23:43 +0000
 ./tmp/cache/sprockets/v3.0/h9vBYNULP-XOhnPQRWfYZghk_G4thgI6gRly0icE7Xg.cache	Fri, 19 Feb 2016 19:09:05 +0000
@@ -487,7 +484,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/WyCSwnGb7l05FHTFBtlZ8K4zSY9YrkTJ-dHIyTCQFfE.cache	Fri, 19 Feb 2016 01:39:12 +0000
 ./tmp/cache/sprockets/v3.0/4E266Dt95Gd5SqlYrdJqNDJERUmBxMZ9t9VNBbA6bgY.cache	Fri, 19 Feb 2016 20:46:42 +0000
 ./tmp/cache/sprockets/v3.0/6EOODoY0YmiuGYyS0c8YKq4CByrGVCBNi9mg8of3agg.cache	Fri, 19 Feb 2016 18:04:40 +0000
-./tmp/cache/sprockets/v3.0/Ms4qT4s_oTXgWb_pn0uiZawudE6PgP9ANNG1Uf0kc8A.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/Ms4qT4s_oTXgWb_pn0uiZawudE6PgP9ANNG1Uf0kc8A.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/0wdHcJXCCNINrfk4aqRQB5vKkkw7LqQbuGsU1Xr24Oc.cache	Fri, 19 Feb 2016 02:40:10 +0000
 ./tmp/cache/sprockets/v3.0/A0fDKwOgE4Jf9rgvTEZ5UD8GWHUp5CLOE1gJyL1n5nM.cache	Thu, 18 Feb 2016 17:03:04 +0000
 ./tmp/cache/sprockets/v3.0/j-XZ8mscjeDz3cXE3iAV8hgHCWbT0AG26X4rImTsNAo.cache	Thu, 18 Feb 2016 13:20:06 +0000
@@ -520,7 +517,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/AUZesdfmCrryVULwUUMSpe9nOungKk0a3CjO1GYaQIE.cache	Fri, 19 Feb 2016 20:46:42 +0000
 ./tmp/cache/sprockets/v3.0/bscei_-LTbBy_x3asP755v-x13FDpVVX2Ue_LbKoWMY.cache	Fri, 19 Feb 2016 01:39:12 +0000
 ./tmp/cache/sprockets/v3.0/O4ANC_9T6ClcNPKU1KdnnYupvGQxNwLHxjQc4s8nNGY.cache	Fri, 19 Feb 2016 20:46:44 +0000
-./tmp/cache/sprockets/v3.0/WwTU5MYJHfAoFL8I5CvZCUB8KoyXxG9THFfVAEpm01U.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/WwTU5MYJHfAoFL8I5CvZCUB8KoyXxG9THFfVAEpm01U.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/bPNkOtLTxSKYvrPq1pVMFVK8V7tBIU0xMHW6Cj_-5js.cache	Fri, 19 Feb 2016 20:46:47 +0000
 ./tmp/cache/sprockets/v3.0/wyu4N-DsVP9gFDXxqFOSX4gSNM5BOdsym4wyWxyQ0tI.cache	Fri, 19 Feb 2016 20:46:46 +0000
 ./tmp/cache/sprockets/v3.0/HVJPhIr2NXqdSU45T8hgmexiv873Jt-fP14qTp0bikA.cache	Fri, 19 Feb 2016 19:25:47 +0000
@@ -567,7 +564,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/zWwdh8nOoTuqlByzcjumd_Hmub56QCI510K9pRFxIII.cache	Thu, 18 Feb 2016 13:22:33 +0000
 ./tmp/cache/sprockets/v3.0/5RoZLcGOuH2q1k1n9gFWzo1zbRyvWbozWiUuz3bOleg.cache	Fri, 19 Feb 2016 20:46:44 +0000
 ./tmp/cache/sprockets/v3.0/pFA0V-zrT9QmkPwEwPBwUDYkgrCHXKSYH0up_vY28wY.cache	Fri, 19 Feb 2016 18:04:40 +0000
-./tmp/cache/sprockets/v3.0/6Nab4HxVM1frFcBgCyfCgTomsE25twyu6wjZK9IRxpU.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/6Nab4HxVM1frFcBgCyfCgTomsE25twyu6wjZK9IRxpU.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/fTrOB4MXn3M-KnYx_XDFYEumsZ2zJvTFNET1IH1Zgzk.cache	Fri, 19 Feb 2016 20:46:46 +0000
 ./tmp/cache/sprockets/v3.0/6Pywjt6gx6RBgzrVpwAwbRqtQiTdlrIedx5WtFcoeyA.cache	Thu, 18 Feb 2016 13:31:03 +0000
 ./tmp/cache/sprockets/v3.0/CpcwQCaari_HQDqW7TKxYw8fhJ8JhNo756eVUp2u0hc.cache	Fri, 19 Feb 2016 14:30:31 +0000
@@ -599,7 +596,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/Tk47w7afadYGRcfiHZzcnw0o4OnG4kiXC-ioNd-actc.cache	Fri, 19 Feb 2016 02:40:10 +0000
 ./tmp/cache/sprockets/v3.0/zSxYbh33fVFld7G2RojxRDCuLV_sTQJWKUyK6oFvGdg.cache	Fri, 19 Feb 2016 19:24:49 +0000
 ./tmp/cache/sprockets/v3.0/dvZkB9DWj_Q3fbjq9MsBjPtek5fmfRCKefT06vaCSwM.cache	Fri, 19 Feb 2016 20:46:42 +0000
-./tmp/cache/sprockets/v3.0/AS7SNh5FZ3XFoG4TcU74ZELjtFrtsiVlo7YQ9MKOps0.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/AS7SNh5FZ3XFoG4TcU74ZELjtFrtsiVlo7YQ9MKOps0.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/oPWtWJRmDg_UJDtViBE_tL3ntJ6s6Czqk54ckfzAuv0.cache	Thu, 18 Feb 2016 23:56:03 +0000
 ./tmp/cache/sprockets/v3.0/ahXZL6KyEw9ymnN-SHUC0pXRpxbY3EcEENbcu5I1524.cache	Fri, 19 Feb 2016 19:19:26 +0000
 ./tmp/cache/sprockets/v3.0/Gt_E2Ry0hsdYLusVCIy1q7qKGYc6hCSnqqonO8434L0.cache	Fri, 19 Feb 2016 02:52:30 +0000
@@ -838,11 +835,11 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/_qZemCEEis1TsG5-E4jgRoel8BOlfGzlh5aDg0c0M9c.cache	Thu, 18 Feb 2016 13:16:35 +0000
 ./tmp/cache/sprockets/v3.0/SYPOMZSp4k251JdjzWOJCsQWG0FvUZ6ItW05MGVQ4uI.cache	Fri, 19 Feb 2016 17:42:18 +0000
 ./tmp/cache/sprockets/v3.0/eEBAmb9p6v0w5MsIfw64mO7hETCNLMdpP-M4TVVBPEc.cache	Fri, 19 Feb 2016 18:04:40 +0000
-./tmp/cache/sprockets/v3.0/SSDs0WL6-oVkTHbSZHAHN2Qn_Pgv2CJUZ-6RDpbZUqM.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/SSDs0WL6-oVkTHbSZHAHN2Qn_Pgv2CJUZ-6RDpbZUqM.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/OQVntgGvdEmPttdfNS2xye6J4wR3Q_CABe5fMzHvGaM.cache	Fri, 19 Feb 2016 20:46:47 +0000
 ./tmp/cache/sprockets/v3.0/Sm9b_UcwWm4PxhjcbGaRy5OA81VsKeDZZZw2ODar3Hc.cache	Fri, 19 Feb 2016 20:46:48 +0000
 ./tmp/cache/sprockets/v3.0/IpBe-Drf1sr4U6O_Yn8APgOp0GuwrgM8ukHJfmC2ZJk.cache	Fri, 19 Feb 2016 17:51:35 +0000
-./tmp/cache/sprockets/v3.0/I9Ji3hKbhOCXCg5Or8mdoK35rCPPZCSeNUUiuHJ176w.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/I9Ji3hKbhOCXCg5Or8mdoK35rCPPZCSeNUUiuHJ176w.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/buMrGl0VVZfQ8uAwKhLb5YZ-DLTYuU4VRwD4qVQBtCg.cache	Fri, 19 Feb 2016 20:46:47 +0000
 ./tmp/cache/sprockets/v3.0/uzSDU8GWYT-DWEtqdLVwnECX7xWJDiayGANBxwFqjM0.cache	Fri, 19 Feb 2016 19:08:24 +0000
 ./tmp/cache/sprockets/v3.0/o6SN6py613MtPzY3SWyLWrDpZzz0OU-7kJjqDg5cggg.cache	Fri, 19 Feb 2016 18:04:40 +0000
@@ -873,7 +870,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/pyXaoZ54kCv0HsQHj-tmg70w5fK8Lb9r7ul8cxJgnUs.cache	Thu, 18 Feb 2016 13:25:58 +0000
 ./tmp/cache/sprockets/v3.0/2QXQcaNj7hNJ9iVpaDDF6gPjlp-smNAH9ogEClKPFQk.cache	Fri, 19 Feb 2016 18:04:40 +0000
 ./tmp/cache/sprockets/v3.0/KBKlpYyvrqPTybtY7gONxTCc8Lv72M1Gbb3p73PpetM.cache	Fri, 19 Feb 2016 18:04:40 +0000
-./tmp/cache/sprockets/v3.0/7QZ992yc_vgzDLwKT9H0tUvJFGMJKzhpAvoJnxPhWiM.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/7QZ992yc_vgzDLwKT9H0tUvJFGMJKzhpAvoJnxPhWiM.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/MK63pZLdI8p8jz4AZA2XEhkJ_ekuzEmZ7XAhTpzNJPs.cache	Fri, 19 Feb 2016 02:47:09 +0000
 ./tmp/cache/sprockets/v3.0/xVoZG6lH3HlX17HlWzYrRRl12mOwTyaAiX-xBiFNhyU.cache	Fri, 19 Feb 2016 14:30:31 +0000
 ./tmp/cache/sprockets/v3.0/IZRFyvARN4UcCeTdIX-SttsC02BqG3SHjVssvZtGbpI.cache	Thu, 18 Feb 2016 16:53:40 +0000
@@ -885,7 +882,7 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/BtIqri61azDWiGASTsgCsSA47ApJz2hjw4DpryQoLkk.cache	Thu, 18 Feb 2016 13:26:58 +0000
 ./tmp/cache/sprockets/v3.0/EVZIQOL5sncjTFS5nYi87gjomjKDoGd3hIoGFn_r98A.cache	Fri, 19 Feb 2016 19:14:06 +0000
 ./tmp/cache/sprockets/v3.0/0QYTKPDq_G678SRmiTTZvDQj6D_2XTjjx67SBa2Mjog.cache	Thu, 18 Feb 2016 16:51:05 +0000
-./tmp/cache/sprockets/v3.0/m8RV6Jib53pxfhAQaiTgUFJpfYn-raiX_ujaG-cnyP0.cache	Fri, 19 Feb 2016 20:51:28 +0000
+./tmp/cache/sprockets/v3.0/m8RV6Jib53pxfhAQaiTgUFJpfYn-raiX_ujaG-cnyP0.cache	Fri, 19 Feb 2016 21:04:42 +0000
 ./tmp/cache/sprockets/v3.0/d0Xb36c0EUS3Buj01RPJR7vm6RzERBJ_ZOBdhJsveLw.cache	Fri, 19 Feb 2016 20:46:42 +0000
 ./tmp/cache/sprockets/v3.0/sEtTykKmOAljN61oFRQQ9pS4cnOhd5cztSWLFOWTMoc.cache	Fri, 19 Feb 2016 20:46:47 +0000
 ./tmp/cache/sprockets/v3.0/kUcStT5lxXgytosOJbwP6ASRhKoaw6r9RpBBcUYn_hM.cache	Thu, 18 Feb 2016 19:39:00 +0000
@@ -979,9 +976,8 @@ Fri, 19 Feb 2016 20:53:23 +0000
 ./tmp/cache/sprockets/v3.0/HQMoljf_j8Pzkz_dTwfOpkBjw5TuSU8DHmF5tpNx3tA.cache	Fri, 19 Feb 2016 19:09:05 +0000
 ./tmp/cache/sprockets/v3.0/9Rq_vHDu3w0H0FzHuKfWZvRQcx5Cuy58RJMudQbvQq4.cache	Fri, 19 Feb 2016 20:46:42 +0000
 ./spring-1000/b64b7341bada19b9d1d67c6cf118683a.pid	Fri, 19 Feb 2016 12:54:16 +0000
-./RackMultipart20160219-11979-h68cu5	Fri, 19 Feb 2016 20:51:27 +0000
 ./log/test.log	Fri, 19 Feb 2016 02:19:01 +0000
-./log/development.log	Fri, 19 Feb 2016 20:51:28 +0000
+./log/development.log	Fri, 19 Feb 2016 21:04:42 +0000
 ./Gemfile	Fri, 19 Feb 2016 20:53:13 +0000
 ./s.ytimg.com/yts/img/avatar_720-vflYJnzBZ.png	Fri, 12 Feb 2016 10:38:53 +0000
 ./s.ytimg.com/yts/img/workspace	Fri, 19 Feb 2016 15:05:21 +0000
