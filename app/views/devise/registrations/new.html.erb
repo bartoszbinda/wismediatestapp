@@ -1,4 +1,4 @@
-<div class="container-fluid center">
+<div class="container-fluid center article-box">
   <h2 class="center">Sign up</h2>
   
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { multipart: true }) do |f| %>
@@ -12,9 +12,9 @@
       <%= f.label :nick %><br />
       <%= f.text_field :nick, autofocus: true %>
     </div>
-    <div class="field center">
+    <div class="field">
       <%= f.label :avatar %>
-      <%= f.file_field :avatar %>
+      <%= f.file_field :avatar, class: "center-block" %>
     </div>
     <div class="field">
       <%= f.label :password %>
