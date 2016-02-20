@@ -10,7 +10,7 @@ I use:
 * paperclip for sending images/videos
 
 ###Done:
-* Write an AJAX for manageposts, done!
+* Write an AJAX for manageposts
 
 #To do:
 * Write an AJAX validation for registration/new.html.erb and registration/edit.html.erb
