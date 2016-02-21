@@ -1,16 +1,18 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
-<% if user_signed_in? && current_user.isAdmin %>
+<div class="update-comments", remote: true>
   <p>
-     <%= link_to 'Destroy', [comment.article, comment],
-            method: :delete,
-            data: { confirm: 'Are you sure?' } %>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
   </p>
-<% end %>
+   
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+  <% if user_signed_in? && current_user.isAdmin %>
+    <p>
+       <%= link_to 'Destroy', [comment.article, comment],
+              method: :delete,
+              data: { confirm: 'Are you sure?' }, remote: true, class:"destroy_comment" %>
+    </p>
+  <% end %>
+</div>
